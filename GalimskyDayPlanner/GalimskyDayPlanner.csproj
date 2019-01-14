@@ -45,12 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalendForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CalendForm.Designer.cs">
-      <DependentUpon>CalendForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="CalendTask.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,9 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CalendForm.resx">
-      <DependentUpon>CalendForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="TaskInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskInputForm.Designer.cs">
+      <DependentUpon>TaskInputForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TaskInputForm.resx">
+      <DependentUpon>TaskInputForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DATA\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

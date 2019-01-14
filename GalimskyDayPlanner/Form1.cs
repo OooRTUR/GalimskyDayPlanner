@@ -12,10 +12,24 @@ namespace GalimskyDayPlanner
 {
     public partial class Form1 : Form
     {
+        //private static Form1 form = null;
+        /*
+        public static Form1 GetInstance()
+        {
+            if (form == null)
+            {
+                form = this;
+                //form.FormClosed += delegate { form = null; };
+            }
+            return form;
+        }*/
+
+        Label label;
 
         public Form1()
         {
             InitializeComponent();
+            //form = GetInstance();
             SetDate(DateTime.Now);
         }
 
@@ -23,13 +37,6 @@ namespace GalimskyDayPlanner
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CalendForm calendForm = new CalendForm();
-            calendForm.Show();
-        }
-
         
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
@@ -51,8 +58,20 @@ namespace GalimskyDayPlanner
 
         private void labelTask_Click(object sender, EventArgs e)
         {
-            var label = (Label)sender;
+            label = (Label)sender;
             label.Text = "text";
+
+            var form =  TaskInputForm.GetInstance();
+            form.Show();
+            form.FormClosed += TaskInputForm_Closed;
+            this.Enabled = false;
+        }
+
+        private void TaskInputForm_Closed(object sender, FormClosedEventArgs e)
+        {
+            Form form = (Form)sender;
+            label.Text = form.
+            this.Enabled = true;
         }
     }
 }
