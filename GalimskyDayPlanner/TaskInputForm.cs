@@ -19,10 +19,13 @@ namespace GalimskyDayPlanner
         public Form1 form1;
         public TextBox textBox;
 
+        public string startText;
+
 
         public TaskInputForm()
         {
             InitializeComponent();
+            textBox = textBox1;
         }
 
         public static TaskInputForm GetInstance()
@@ -49,9 +52,21 @@ namespace GalimskyDayPlanner
             form1.label.Text = text;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void applyTaskButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cancelEditButton_Click(object sender, EventArgs e)
+        {
+            form1.label.Text = startText;
+            Close();
+        }
+
+        private void deleteTaskButton_Click(object sender, EventArgs e)
+        {
+            form1.label.Text = "";
+            Close();
         }
     }
 }

@@ -26,6 +26,7 @@ namespace GalimskyDayPlanner
 
         public Label label;
         public TaskInputForm taskInputForm;
+        public PhoneBookForm phoneBookForm;
 
         public Form1()
         {
@@ -65,18 +66,25 @@ namespace GalimskyDayPlanner
 
             taskInputForm =  TaskInputForm.GetInstance();
             taskInputForm.form1 = this;
+            taskInputForm.startText = label.Text;
             if(taskInputForm.textBox!=null)
                 taskInputForm.textBox.Text = label.Text;
             taskInputForm.Show();
             taskInputForm.FormClosed += TaskInputForm_Closed;
-            this.Enabled = false;
+            Enabled = false;
         }
 
         private void TaskInputForm_Closed(object sender, FormClosedEventArgs e)
         {
-            Form form = (Form)sender;
-            //label.Text = form.
-            this.Enabled = true;
+            Enabled = true;
+        }
+
+        private void openBookButton_Click(object sender, EventArgs e)
+        {
+            phoneBookForm = PhoneBookForm.GetInstance();
+            phoneBookForm.Show();
+            phoneBookForm.FormClosed += TaskInputForm_Closed;
+            Enabled = false;
         }
     }
 }

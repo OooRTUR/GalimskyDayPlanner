@@ -89,6 +89,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.TestLabel = new System.Windows.Forms.Label();
+            this.openBookButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -697,11 +698,22 @@
             this.TestLabel.TabIndex = 3;
             this.TestLabel.Text = "TESTLABEL";
             // 
+            // openBookButton
+            // 
+            this.openBookButton.Location = new System.Drawing.Point(631, 215);
+            this.openBookButton.Name = "openBookButton";
+            this.openBookButton.Size = new System.Drawing.Size(157, 23);
+            this.openBookButton.TabIndex = 4;
+            this.openBookButton.Text = "Телефонна книга";
+            this.openBookButton.UseVisualStyleBackColor = true;
+            this.openBookButton.Click += new System.EventHandler(this.openBookButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 606);
+            this.Controls.Add(this.openBookButton);
             this.Controls.Add(this.CurrentDateTitle);
             this.Controls.Add(this.TestLabel);
             this.Controls.Add(this.monthCalendar1);
@@ -815,6 +827,7 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label labelTask2;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button openBookButton;
     }
 }
 
