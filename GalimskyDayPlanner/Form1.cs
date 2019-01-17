@@ -24,7 +24,8 @@ namespace GalimskyDayPlanner
             return form;
         }*/
 
-        Label label;
+        public Label label;
+        public TaskInputForm taskInputForm;
 
         public Form1()
         {
@@ -56,21 +57,25 @@ namespace GalimskyDayPlanner
             CurrentDateTitle.Text = "Планы на " + week + " " + day + " " + month + " " + year + isToday;
         }
 
+        //для всех labelTask
         private void labelTask_Click(object sender, EventArgs e)
         {
             label = (Label)sender;
-            label.Text = "text";
+            //label.Text = "text";
 
-            var form =  TaskInputForm.GetInstance();
-            form.Show();
-            form.FormClosed += TaskInputForm_Closed;
+            taskInputForm =  TaskInputForm.GetInstance();
+            taskInputForm.form1 = this;
+            if(taskInputForm.textBox!=null)
+                taskInputForm.textBox.Text = label.Text;
+            taskInputForm.Show();
+            taskInputForm.FormClosed += TaskInputForm_Closed;
             this.Enabled = false;
         }
 
         private void TaskInputForm_Closed(object sender, FormClosedEventArgs e)
         {
             Form form = (Form)sender;
-            label.Text = form.
+            //label.Text = form.
             this.Enabled = true;
         }
     }

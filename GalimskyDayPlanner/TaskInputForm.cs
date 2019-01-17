@@ -15,7 +15,9 @@ namespace GalimskyDayPlanner
         public string text;
         private static TaskInputForm form = null;
 
-        public static Form1 form1;
+        public Label lastLabel;
+        public Form1 form1;
+        public TextBox textBox;
 
 
         public TaskInputForm()
@@ -30,7 +32,6 @@ namespace GalimskyDayPlanner
                 form = new TaskInputForm();
                 form.FormClosed += delegate {
                     form = null;
-
                 };
             }
             return form;
@@ -43,9 +44,14 @@ namespace GalimskyDayPlanner
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            var textBox = (TextBox)sender;
+            textBox = (TextBox)sender;
             text = textBox.Text;
-            label1.Text = text;
+            form1.label.Text = text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
