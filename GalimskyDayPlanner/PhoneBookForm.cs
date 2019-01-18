@@ -40,9 +40,16 @@ namespace GalimskyDayPlanner
 
         private void CrtNumberButton_Click(object sender, EventArgs e)
         {
-            Data.numbers.Add(new PhoneNumber(testNumbers[index],testNames[index]));
-            index++;
-            OutNumbers();
+            CreatePhoneForm createPhoneForm = new CreatePhoneForm();
+            createPhoneForm.inputName.Text = "Введите имя";
+            createPhoneForm.inputPhone.Text = "Введите номер";
+            createPhoneForm.Show();
+            this.Enabled = false;
+            createPhoneForm.FormClosed += delegate { this.Enabled = true; OutNumbers(); };
+
+            //Data.numbers.Add(new PhoneNumber(testNumbers[index],testNames[index]));
+            //index++;
+            //OutNumbers();
         }
 
         private void OutNumbers()

@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreatePhoneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePhoneForm.Designer.cs">
+      <DependentUpon>CreatePhoneForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DATA\CalendTask.cs" />
     <Compile Include="DATA\Data.cs" />
     <Compile Include="DATA\PhoneNumber.cs" />
@@ -71,6 +77,9 @@
     <Compile Include="TaskInputForm.Designer.cs">
       <DependentUpon>TaskInputForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreatePhoneForm.resx">
+      <DependentUpon>CreatePhoneForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
