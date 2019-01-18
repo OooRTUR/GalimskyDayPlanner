@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace GalimskyDayPlanner
 {
@@ -42,20 +43,24 @@ namespace GalimskyDayPlanner
             Data.numbers.Add(new PhoneNumber(testNumbers[index],testNames[index]));
             index++;
             OutNumbers();
-            
         }
 
         private void OutNumbers()
         {
             Data.numbers.Sort();
+            
             labels.Clear();
-            for(int i=0; i < Data.numbers.Count; i++)
+
+            numbersPanel.Controls.Clear();
+            for (int i=0; i < Data.numbers.Count; i++)
             {
+                Console.WriteLine(Data.numbers[i]);
                 labels.Add(new Label());
                 labels[i].Text =Data.numbers[i].Name+" | " + Data.numbers[i].Number;
                 labels[i].Location = new Point(10, 10+i*25);
-                Controls.Add(labels[i]);
+                numbersPanel.Controls.Add(labels[i]);
             }
+           
         }
     }
 }
