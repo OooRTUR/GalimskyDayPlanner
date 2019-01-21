@@ -28,6 +28,7 @@ namespace GalimskyDayPlanner
         private void button1_Click(object sender, EventArgs e)
         {
             Data.numbers.Add(new PhoneNumber(textBoxPhone.Text, textBoxName.Text));
+            Data.numbers.Last().firstLetter = inputName.Text[0];
             Close();
         }
     }

@@ -13,7 +13,7 @@ namespace GalimskyDayPlanner
         public string name;  //обладатель номера
         public char firstLetter;
 
-        public static readonly string chars = "abcdefghijklmnopqrstuvwxyz";
+        public static readonly string chars = "abcdefghijklmnopqrstuvwxyzабвгдежзиклмнопрстуфхцшщэюя";
         public static readonly string p_chars = "0123456789-";
 
         public override string ToString()

@@ -55,10 +55,10 @@ namespace GalimskyDayPlanner
             Data.numbers = new List<PhoneNumber>();
             for (int i = 0; i < PhoneNumber.chars.Length; i++)
             {
-                int next = rand.Next(2, 5);
-                for (int j = 0; j < 5; j++)
+                int next = rand.Next(0, 3);
+                for (int j = 0; j < next; j++)
                 {
-                    int index = i * 5 + j;
+                    int index = i * next + j;
                     Data.numbers.Add(new PhoneNumber());
                     Data.numbers[index].firstLetter = PhoneNumber.chars[i];
                     Data.numbers[index].SetRandomName(PhoneNumber.chars[i]);
@@ -70,13 +70,16 @@ namespace GalimskyDayPlanner
 
         private void OutNumbers()
         {
+            Console.WriteLine("=====================================================");
             Data.numbers.Sort();
             
             labels.Clear();
 
             numbersPanel.Controls.Clear();
-            char signature = 'A';
-            Console.WriteLine('A');
+            int charInd = 0;
+            char signature =PhoneNumber.chars[charInd];
+            
+            Console.WriteLine(signature);
             int ind = 0;
             labels.Add(new Label());
             labels.Last().Text = signature.ToString();
@@ -84,9 +87,10 @@ namespace GalimskyDayPlanner
             numbersPanel.Controls.Add(labels.Last());
             for (int i=0; i < Data.numbers.Count; i++)
             {
-                if (char.ToUpper(Data.numbers[i].firstLetter) != signature)
+                if (char.ToUpper(Data.numbers[i].firstLetter) != char.ToUpper(signature) && charInd < PhoneNumber.chars.Length-1)
                 {
-                    signature++;
+                    charInd++;
+                    signature = PhoneNumber.chars[charInd];
                     labels.Add(new Label());
                     labels.Last().Text = signature.ToString();
                     labels.Last().Location = new Point(10, 10 + ind * 25);
