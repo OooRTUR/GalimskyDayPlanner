@@ -33,21 +33,23 @@
             this.labelName = new System.Windows.Forms.Label();
             this.labelPhone = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(12, 120);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(210, 20);
+            this.textBoxName.Size = new System.Drawing.Size(239, 20);
             this.textBoxName.TabIndex = 0;
             // 
             // textBoxPhone
             // 
             this.textBoxPhone.Location = new System.Drawing.Point(12, 72);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(210, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(239, 20);
             this.textBoxPhone.TabIndex = 1;
             // 
             // labelName
@@ -78,22 +80,44 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Введите номер";
             // 
-            // button1
+            // buttonSave
             // 
-            this.button1.Location = new System.Drawing.Point(12, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Сохранить номер";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSave.Location = new System.Drawing.Point(12, 159);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(77, 23);
+            this.buttonSave.TabIndex = 5;
+            this.buttonSave.Text = "Сохранить";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(95, 159);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 6;
+            this.buttonDelete.Text = "Удалить";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Location = new System.Drawing.Point(176, 159);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 7;
+            this.buttonCancel.Text = "Отмена";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // CreatePhoneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 204);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(263, 204);
+            this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelPhone);
             this.Controls.Add(this.labelName);
@@ -113,6 +137,8 @@
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

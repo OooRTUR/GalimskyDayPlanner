@@ -15,7 +15,10 @@ namespace GalimskyDayPlanner
     {
         public static PhoneBookForm form;
 
-        List<Label> labels = new List<Label>();
+        List<LabelPhone> labels = new List<LabelPhone>();
+
+        Color defColor = Color.White;
+        Color highlitedColor = Color.Gray;
 
         public PhoneBookForm()
         {
@@ -49,16 +52,28 @@ namespace GalimskyDayPlanner
             //OutNumbers();
         }
 
+        private void EditNumberButton_Click(object sender, EventArgs e)
+        {
+            LabelPhone label = sender as LabelPhone;
+            CreatePhoneForm createPhoneForm = new CreatePhoneForm();
+            createPhoneForm.inputName.Text = label.phoneNumber.name;
+            createPhoneForm.inputPhone.Text = label.phoneNumber.number;
+            createPhoneForm.phoneNumber = label.phoneNumber;
+            createPhoneForm.Show();
+            this.Enabled = false;
+            createPhoneForm.FormClosed += delegate { this.Enabled = true; OutNumbers(); };
+        }
+
         private static Random rand = new Random();
         private void GenList()
         {
             Data.numbers = new List<PhoneNumber>();
             for (int i = 0; i < PhoneNumber.chars.Length; i++)
             {
-                int next = rand.Next(0, 3);
-                for (int j = 0; j < next; j++)
+                int count = 1;
+                for (int j = 0; j < count; j++)
                 {
-                    int index = i * next + j;
+                    int index = i * count + j;
                     Data.numbers.Add(new PhoneNumber());
                     Data.numbers[index].firstLetter = PhoneNumber.chars[i];
                     Data.numbers[index].SetRandomName(PhoneNumber.chars[i]);
@@ -70,44 +85,83 @@ namespace GalimskyDayPlanner
 
         private void OutNumbers()
         {
-            Console.WriteLine("=====================================================");
+            //Console.WriteLine("=====================================================");
             Data.numbers.Sort();
             
             labels.Clear();
 
             numbersPanel.Controls.Clear();
-            int charInd = 0;
-            char signature =PhoneNumber.chars[charInd];
-            
-            Console.WriteLine(signature);
             int ind = 0;
-            labels.Add(new Label());
+
+            //int charInd = 0;
+            char signature = Data.numbers[0].firstLetter;
+            labels.Add(new LabelPhone());
             labels.Last().Text = signature.ToString();
             labels.Last().Location = new Point(10, 10 + ind * 25);
             numbersPanel.Controls.Add(labels.Last());
-            for (int i=0; i < Data.numbers.Count; i++)
+            ind++;
+
+            labels.Add(new LabelPhone());
+            labels.Last().Text = Data.numbers[0].name + " | " + Data.numbers[0].number;
+            labels.Last().phoneNumber = Data.numbers[0];
+            labels.Last().Location = new Point(10, 10 + ind * 25);
+            labels.Last().AutoSize = false;
+            labels.Last().Width = 400;
+            labels.Last().BackColor = defColor;
+            labels.Last().Click += new EventHandler(EditNumberButton_Click);
+            labels.Last().MouseEnter += new EventHandler(label_MouseEnter);
+            labels.Last().MouseLeave += new EventHandler(label_MouseExit);
+            numbersPanel.Controls.Add(labels.Last());
+            ind++;
+
+            for (int i=1; i < Data.numbers.Count; i++)
             {
-                if (char.ToUpper(Data.numbers[i].firstLetter) != char.ToUpper(signature) && charInd < PhoneNumber.chars.Length-1)
+                if (char.ToUpper(Data.numbers[i].firstLetter) != char.ToUpper(signature)) //&& charInd < PhoneNumber.chars.Length-1)
                 {
-                    charInd++;
-                    signature = PhoneNumber.chars[charInd];
-                    labels.Add(new Label());
+                    //charInd++;
+                    signature = Data.numbers[i].firstLetter;
+                    labels.Add(new LabelPhone());
                     labels.Last().Text = signature.ToString();
                     labels.Last().Location = new Point(10, 10 + ind * 25);
                     numbersPanel.Controls.Add(labels.Last());
                     ind++;
-                    Console.WriteLine(signature);
+                    //Console.WriteLine(signature);
                 }
-                Console.WriteLine(Data.numbers[i]);
-                labels.Add(new Label());
+                //Console.WriteLine(Data.numbers[i]);
+                labels.Add(new LabelPhone());
                 labels.Last().Text =Data.numbers[i].name+" | " + Data.numbers[i].number;
+                labels.Last().phoneNumber = Data.numbers[i];
                 labels.Last().Location = new Point(10, 10+ind*25);
                 labels.Last().AutoSize = false;
                 labels.Last().Width = 400;
+                labels.Last().BackColor = defColor;
+                labels.Last().Click += new EventHandler(EditNumberButton_Click);
+                labels.Last().MouseEnter += new EventHandler(label_MouseEnter);
+                labels.Last().MouseLeave += new EventHandler(label_MouseExit);
                 numbersPanel.Controls.Add(labels.Last());
                 ind++;
             }
            
+        }
+
+        
+
+        private void label_MouseEnter(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.BackColor = highlitedColor;
+        }
+
+        private void label_MouseExit(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.BackColor = defColor;
+        }
+
+        private void LB_Click(object sender, EventArgs e)
+        {
+            //Label label = sender as Label;
+            //label.BackColor = defColor;
         }
 
         private void button1_Click(object sender, EventArgs e)

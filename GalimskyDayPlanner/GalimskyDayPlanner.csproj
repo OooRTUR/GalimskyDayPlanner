@@ -56,6 +56,9 @@
     </Compile>
     <Compile Include="DATA\CalendTask.cs" />
     <Compile Include="DATA\Data.cs" />
+    <Compile Include="DATA\LabelPhone.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DATA\PhoneNumber.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
