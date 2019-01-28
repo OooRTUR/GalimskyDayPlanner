@@ -45,9 +45,9 @@ namespace GalimskyDayPlanner
             }
             //Console.WriteLine(Data.dayTasks);
             Console.WriteLine();
-            for (int i = 0; i <tableLayoutPanelRight.Controls.Count; i++)
+            for (int i = 0; i <tableLayoutPanelMain.Controls.Count; i++)
             {
-                Console.WriteLine(tableLayoutPanelLeft.Controls[i].Text = i.ToString()+" a");
+                Console.WriteLine(tableLayoutPanelMain.Controls[i].Controls[0].Text = i.ToString()+" a");
             }
             /*
             for (int i = tableLayoutPanelRight.Controls.Count - 1; i >= 0; i--)
@@ -125,9 +125,11 @@ namespace GalimskyDayPlanner
             //Data.dayTasks.Last().calendTasks.Sort();
             Console.WriteLine(Data.dayTasks.Last());
 
-            for(int i=0;i <tableLayoutPanelLeft.Controls.Count; i++)
+            for(int i=0;i <tableLayoutPanelMain.Controls.Count; i++)
             {
-                tableLayoutPanelLeft.Controls[i].Text = Data.dayTasks.Last().calendTasks[i].text;
+                tableLayoutPanelMain.Controls[i].Controls[0].Text = Data.dayTasks.Last().calendTasks[i].text;
+                //tableLayoutPanelMain.Controls[i].Controls[1].Text = Data.dayTasks.Last().calendTasks[i].text;
+
             }
         }
     }
