@@ -44,11 +44,9 @@ namespace GalimskyDayPlanner
                 Console.WriteLine("Задач на сегодня нет");
             }
             Console.WriteLine(Data.dayTasks);
-
-            for(int i=0; i<panel1.Controls.Count; i++)
+            for(int i=0; i < tableLayoutPanelRight.Controls.Count; i++)
             {
-                Console.WriteLine(panel1.Controls[i].Name);
-                Console.WriteLine("   "+panel1.Controls[i].Controls[0].Name +" "+ panel1.Controls[i].Controls[1].Name);
+                Console.WriteLine(tableLayoutPanelRight.Controls[i].Name);
             }
         }
 
