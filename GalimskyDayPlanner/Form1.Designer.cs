@@ -34,45 +34,45 @@
             this.openBookButton = new System.Windows.Forms.Button();
             this.buttonOutDay = new System.Windows.Forms.Button();
             this.tableLayoutPanelLeft = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.tableLayoutPanelRight = new System.Windows.Forms.TableLayoutPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.labelDayTime1 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime2 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime3 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime4 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime5 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime6 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime7 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime8 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime9 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime10 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime11 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime12 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime13 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime14 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime15 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime16 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime17 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime18 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime19 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime20 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime21 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime22 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime23 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime24 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime25 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime26 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime27 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime28 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime29 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime30 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime31 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime32 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime33 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime34 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime35 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime36 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime37 = new GalimskyDayPlanner.LabelDayTime();
+            this.labelDayTime38 = new GalimskyDayPlanner.LabelDayTime();
             this.tableLayoutPanelLeft.SuspendLayout();
             this.tableLayoutPanelRight.SuspendLayout();
             this.SuspendLayout();
@@ -129,25 +129,25 @@
             this.tableLayoutPanelLeft.ColumnCount = 1;
             this.tableLayoutPanelLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelLeft.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanelLeft.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanelLeft.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanelLeft.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanelLeft.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanelLeft.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanelLeft.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanelLeft.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanelLeft.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanelLeft.Controls.Add(this.label10, 0, 9);
-            this.tableLayoutPanelLeft.Controls.Add(this.label11, 0, 10);
-            this.tableLayoutPanelLeft.Controls.Add(this.label12, 0, 11);
-            this.tableLayoutPanelLeft.Controls.Add(this.label13, 0, 12);
-            this.tableLayoutPanelLeft.Controls.Add(this.label14, 0, 13);
-            this.tableLayoutPanelLeft.Controls.Add(this.label15, 0, 14);
-            this.tableLayoutPanelLeft.Controls.Add(this.label16, 0, 15);
-            this.tableLayoutPanelLeft.Controls.Add(this.label17, 0, 16);
-            this.tableLayoutPanelLeft.Controls.Add(this.label18, 0, 17);
-            this.tableLayoutPanelLeft.Controls.Add(this.label19, 0, 18);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime19, 0, 18);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime18, 0, 17);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime17, 0, 16);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime16, 0, 15);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime15, 0, 14);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime14, 0, 13);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime13, 0, 12);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime12, 0, 11);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime11, 0, 10);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime10, 0, 9);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime9, 0, 8);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime8, 0, 7);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime7, 0, 6);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime6, 0, 5);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime5, 0, 4);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime4, 0, 3);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime3, 0, 2);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime2, 0, 1);
+            this.tableLayoutPanelLeft.Controls.Add(this.labelDayTime1, 0, 0);
             this.tableLayoutPanelLeft.Location = new System.Drawing.Point(16, 39);
             this.tableLayoutPanelLeft.Name = "tableLayoutPanelLeft";
             this.tableLayoutPanelLeft.RowCount = 19;
@@ -173,277 +173,30 @@
             this.tableLayoutPanelLeft.Size = new System.Drawing.Size(71, 555);
             this.tableLayoutPanelLeft.TabIndex = 6;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 29);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 29);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 29);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 29);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 145);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 29);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 174);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 29);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "label7";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 203);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 29);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "label8";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 232);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 29);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "label9";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 261);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 29);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "label10";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 290);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 29);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "label11";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 319);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 29);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "label12";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 348);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 29);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "label13";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 377);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 29);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "label14";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 406);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 29);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "label15";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 435);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 29);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "label16";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(3, 464);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 29);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "label17";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 493);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 29);
-            this.label18.TabIndex = 23;
-            this.label18.Text = "label18";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 522);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 33);
-            this.label19.TabIndex = 24;
-            this.label19.Text = "label19";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanelRight
             // 
             this.tableLayoutPanelRight.ColumnCount = 1;
             this.tableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelRight.Controls.Add(this.label38, 0, 18);
-            this.tableLayoutPanelRight.Controls.Add(this.label37, 0, 17);
-            this.tableLayoutPanelRight.Controls.Add(this.label36, 0, 16);
-            this.tableLayoutPanelRight.Controls.Add(this.label35, 0, 15);
-            this.tableLayoutPanelRight.Controls.Add(this.label34, 0, 14);
-            this.tableLayoutPanelRight.Controls.Add(this.label33, 0, 13);
-            this.tableLayoutPanelRight.Controls.Add(this.label32, 0, 12);
-            this.tableLayoutPanelRight.Controls.Add(this.label31, 0, 11);
-            this.tableLayoutPanelRight.Controls.Add(this.label30, 0, 10);
-            this.tableLayoutPanelRight.Controls.Add(this.label29, 0, 9);
-            this.tableLayoutPanelRight.Controls.Add(this.label28, 0, 8);
-            this.tableLayoutPanelRight.Controls.Add(this.label27, 0, 7);
-            this.tableLayoutPanelRight.Controls.Add(this.label26, 0, 6);
-            this.tableLayoutPanelRight.Controls.Add(this.label25, 0, 5);
-            this.tableLayoutPanelRight.Controls.Add(this.label24, 0, 4);
-            this.tableLayoutPanelRight.Controls.Add(this.label23, 0, 3);
-            this.tableLayoutPanelRight.Controls.Add(this.label22, 0, 2);
-            this.tableLayoutPanelRight.Controls.Add(this.label21, 0, 1);
-            this.tableLayoutPanelRight.Controls.Add(this.label20, 0, 0);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime38, 0, 18);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime37, 0, 17);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime36, 0, 16);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime35, 0, 15);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime34, 0, 14);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime33, 0, 13);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime32, 0, 12);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime31, 0, 11);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime30, 0, 10);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime29, 0, 9);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime28, 0, 8);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime27, 0, 7);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime26, 0, 6);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime25, 0, 5);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime24, 0, 4);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime23, 0, 3);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime22, 0, 2);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime21, 0, 1);
+            this.tableLayoutPanelRight.Controls.Add(this.labelDayTime20, 0, 0);
             this.tableLayoutPanelRight.Location = new System.Drawing.Point(94, 39);
             this.tableLayoutPanelRight.Name = "tableLayoutPanelRight";
             this.tableLayoutPanelRight.RowCount = 19;
@@ -466,255 +219,556 @@
             this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
             this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
             this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelRight.Size = new System.Drawing.Size(531, 555);
             this.tableLayoutPanelRight.TabIndex = 7;
             // 
-            // label20
+            // labelDayTime1
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(525, 29);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "label20";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime1.AutoSize = true;
+            this.labelDayTime1.Location = new System.Drawing.Point(3, 0);
+            this.labelDayTime1.Name = "labelDayTime1";
+            this.labelDayTime1.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime1.TabIndex = 0;
+            this.labelDayTime1.Text = "labelDayTime1";
+            this.labelDayTime1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime1.TimeIndex = 0;
             // 
-            // label21
+            // labelDayTime2
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 29);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(525, 29);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "label21";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime2.AutoSize = true;
+            this.labelDayTime2.Location = new System.Drawing.Point(3, 29);
+            this.labelDayTime2.Name = "labelDayTime2";
+            this.labelDayTime2.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime2.TabIndex = 1;
+            this.labelDayTime2.Text = "labelDayTime2";
+            this.labelDayTime2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime2.TimeIndex = 1;
             // 
-            // label22
+            // labelDayTime3
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(3, 58);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(525, 29);
-            this.label22.TabIndex = 2;
-            this.label22.Text = "label22";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime3.AutoSize = true;
+            this.labelDayTime3.Location = new System.Drawing.Point(3, 58);
+            this.labelDayTime3.Name = "labelDayTime3";
+            this.labelDayTime3.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime3.TabIndex = 2;
+            this.labelDayTime3.Text = "labelDayTime3";
+            this.labelDayTime3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime3.TimeIndex = 2;
             // 
-            // label23
+            // labelDayTime4
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(3, 87);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(525, 29);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "label23";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime4.AutoSize = true;
+            this.labelDayTime4.Location = new System.Drawing.Point(3, 87);
+            this.labelDayTime4.Name = "labelDayTime4";
+            this.labelDayTime4.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime4.TabIndex = 3;
+            this.labelDayTime4.Text = "labelDayTime4";
+            this.labelDayTime4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime4.TimeIndex = 3;
             // 
-            // label24
+            // labelDayTime5
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 116);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(525, 29);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "label24";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime5.AutoSize = true;
+            this.labelDayTime5.Location = new System.Drawing.Point(3, 116);
+            this.labelDayTime5.Name = "labelDayTime5";
+            this.labelDayTime5.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime5.TabIndex = 4;
+            this.labelDayTime5.Text = "labelDayTime5";
+            this.labelDayTime5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime5.TimeIndex = 4;
             // 
-            // label25
+            // labelDayTime6
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 145);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(525, 29);
-            this.label25.TabIndex = 5;
-            this.label25.Text = "label25";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime6.AutoSize = true;
+            this.labelDayTime6.Location = new System.Drawing.Point(3, 145);
+            this.labelDayTime6.Name = "labelDayTime6";
+            this.labelDayTime6.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime6.TabIndex = 5;
+            this.labelDayTime6.Text = "labelDayTime6";
+            this.labelDayTime6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime6.TimeIndex = 5;
             // 
-            // label26
+            // labelDayTime7
             // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(3, 174);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(525, 29);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "label26";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime7.AutoSize = true;
+            this.labelDayTime7.Location = new System.Drawing.Point(3, 174);
+            this.labelDayTime7.Name = "labelDayTime7";
+            this.labelDayTime7.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime7.TabIndex = 6;
+            this.labelDayTime7.Text = "labelDayTime7";
+            this.labelDayTime7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime7.TimeIndex = 6;
             // 
-            // label27
+            // labelDayTime8
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 203);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(525, 29);
-            this.label27.TabIndex = 7;
-            this.label27.Text = "label27";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime8.AutoSize = true;
+            this.labelDayTime8.Location = new System.Drawing.Point(3, 203);
+            this.labelDayTime8.Name = "labelDayTime8";
+            this.labelDayTime8.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime8.TabIndex = 7;
+            this.labelDayTime8.Text = "labelDayTime8";
+            this.labelDayTime8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime8.TimeIndex = 7;
             // 
-            // label28
+            // labelDayTime9
             // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 232);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(525, 29);
-            this.label28.TabIndex = 8;
-            this.label28.Text = "label28";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime9.AutoSize = true;
+            this.labelDayTime9.Location = new System.Drawing.Point(3, 232);
+            this.labelDayTime9.Name = "labelDayTime9";
+            this.labelDayTime9.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime9.TabIndex = 8;
+            this.labelDayTime9.Text = "labelDayTime9";
+            this.labelDayTime9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime9.TimeIndex = 8;
             // 
-            // label29
+            // labelDayTime10
             // 
-            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(3, 261);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(525, 29);
-            this.label29.TabIndex = 9;
-            this.label29.Text = "label29";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime10.AutoSize = true;
+            this.labelDayTime10.Location = new System.Drawing.Point(3, 261);
+            this.labelDayTime10.Name = "labelDayTime10";
+            this.labelDayTime10.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime10.TabIndex = 9;
+            this.labelDayTime10.Text = "labelDayTime10";
+            this.labelDayTime10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime10.TimeIndex = 9;
             // 
-            // label30
+            // labelDayTime11
             // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 290);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(525, 29);
-            this.label30.TabIndex = 10;
-            this.label30.Text = "label30";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime11.AutoSize = true;
+            this.labelDayTime11.Location = new System.Drawing.Point(3, 290);
+            this.labelDayTime11.Name = "labelDayTime11";
+            this.labelDayTime11.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime11.TabIndex = 10;
+            this.labelDayTime11.Text = "labelDayTime11";
+            this.labelDayTime11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime11.TimeIndex = 10;
             // 
-            // label31
+            // labelDayTime12
             // 
-            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 319);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(525, 29);
-            this.label31.TabIndex = 11;
-            this.label31.Text = "label31";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime12.AutoSize = true;
+            this.labelDayTime12.Location = new System.Drawing.Point(3, 319);
+            this.labelDayTime12.Name = "labelDayTime12";
+            this.labelDayTime12.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime12.TabIndex = 11;
+            this.labelDayTime12.Text = "labelDayTime12";
+            this.labelDayTime12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime12.TimeIndex = 11;
             // 
-            // label32
+            // labelDayTime13
             // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(3, 348);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(525, 29);
-            this.label32.TabIndex = 12;
-            this.label32.Text = "label32";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime13.AutoSize = true;
+            this.labelDayTime13.Location = new System.Drawing.Point(3, 348);
+            this.labelDayTime13.Name = "labelDayTime13";
+            this.labelDayTime13.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime13.TabIndex = 12;
+            this.labelDayTime13.Text = "labelDayTime13";
+            this.labelDayTime13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime13.TimeIndex = 12;
             // 
-            // label33
+            // labelDayTime14
             // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(3, 377);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(525, 29);
-            this.label33.TabIndex = 13;
-            this.label33.Text = "label33";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime14.AutoSize = true;
+            this.labelDayTime14.Location = new System.Drawing.Point(3, 377);
+            this.labelDayTime14.Name = "labelDayTime14";
+            this.labelDayTime14.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime14.TabIndex = 13;
+            this.labelDayTime14.Text = "labelDayTime14";
+            this.labelDayTime14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime14.TimeIndex = 13;
             // 
-            // label34
+            // labelDayTime15
             // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(3, 406);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(525, 29);
-            this.label34.TabIndex = 14;
-            this.label34.Text = "label34";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime15.AutoSize = true;
+            this.labelDayTime15.Location = new System.Drawing.Point(3, 406);
+            this.labelDayTime15.Name = "labelDayTime15";
+            this.labelDayTime15.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime15.TabIndex = 14;
+            this.labelDayTime15.Text = "labelDayTime15";
+            this.labelDayTime15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime15.TimeIndex = 14;
             // 
-            // label35
+            // labelDayTime16
             // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(3, 435);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(525, 29);
-            this.label35.TabIndex = 15;
-            this.label35.Text = "label35";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime16.AutoSize = true;
+            this.labelDayTime16.Location = new System.Drawing.Point(3, 435);
+            this.labelDayTime16.Name = "labelDayTime16";
+            this.labelDayTime16.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime16.TabIndex = 15;
+            this.labelDayTime16.Text = "labelDayTime16";
+            this.labelDayTime16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime16.TimeIndex = 15;
             // 
-            // label36
+            // labelDayTime17
             // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(3, 464);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(525, 29);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "label36";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime17.AutoSize = true;
+            this.labelDayTime17.Location = new System.Drawing.Point(3, 464);
+            this.labelDayTime17.Name = "labelDayTime17";
+            this.labelDayTime17.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime17.TabIndex = 16;
+            this.labelDayTime17.Text = "labelDayTime17";
+            this.labelDayTime17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime17.TimeIndex = 16;
             // 
-            // label37
+            // labelDayTime18
             // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(3, 493);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(525, 29);
-            this.label37.TabIndex = 17;
-            this.label37.Text = "label37";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime18.AutoSize = true;
+            this.labelDayTime18.Location = new System.Drawing.Point(3, 493);
+            this.labelDayTime18.Name = "labelDayTime18";
+            this.labelDayTime18.Size = new System.Drawing.Size(65, 29);
+            this.labelDayTime18.TabIndex = 17;
+            this.labelDayTime18.Text = "labelDayTime18";
+            this.labelDayTime18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime18.TimeIndex = 17;
             // 
-            // label38
+            // labelDayTime19
             // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelDayTime19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(3, 522);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(525, 33);
-            this.label38.TabIndex = 18;
-            this.label38.Text = "label38";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime19.AutoSize = true;
+            this.labelDayTime19.Location = new System.Drawing.Point(3, 522);
+            this.labelDayTime19.Name = "labelDayTime19";
+            this.labelDayTime19.Size = new System.Drawing.Size(65, 33);
+            this.labelDayTime19.TabIndex = 18;
+            this.labelDayTime19.Text = "labelDayTime19";
+            this.labelDayTime19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime19.TimeIndex = 18;
+            // 
+            // labelDayTime20
+            // 
+            this.labelDayTime20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime20.AutoSize = true;
+            this.labelDayTime20.Location = new System.Drawing.Point(3, 0);
+            this.labelDayTime20.Name = "labelDayTime20";
+            this.labelDayTime20.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime20.TabIndex = 1;
+            this.labelDayTime20.Text = "labelDayTime20";
+            this.labelDayTime20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime20.TimeIndex = 0;
+            // 
+            // labelDayTime21
+            // 
+            this.labelDayTime21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime21.AutoSize = true;
+            this.labelDayTime21.Location = new System.Drawing.Point(3, 29);
+            this.labelDayTime21.Name = "labelDayTime21";
+            this.labelDayTime21.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime21.TabIndex = 2;
+            this.labelDayTime21.Text = "labelDayTime21";
+            this.labelDayTime21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime21.TimeIndex = 1;
+            // 
+            // labelDayTime22
+            // 
+            this.labelDayTime22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime22.AutoSize = true;
+            this.labelDayTime22.Location = new System.Drawing.Point(3, 58);
+            this.labelDayTime22.Name = "labelDayTime22";
+            this.labelDayTime22.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime22.TabIndex = 3;
+            this.labelDayTime22.Text = "labelDayTime22";
+            this.labelDayTime22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime22.TimeIndex = 2;
+            // 
+            // labelDayTime23
+            // 
+            this.labelDayTime23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime23.AutoSize = true;
+            this.labelDayTime23.Location = new System.Drawing.Point(3, 87);
+            this.labelDayTime23.Name = "labelDayTime23";
+            this.labelDayTime23.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime23.TabIndex = 4;
+            this.labelDayTime23.Text = "labelDayTime23";
+            this.labelDayTime23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime23.TimeIndex = 3;
+            // 
+            // labelDayTime24
+            // 
+            this.labelDayTime24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime24.AutoSize = true;
+            this.labelDayTime24.Location = new System.Drawing.Point(3, 116);
+            this.labelDayTime24.Name = "labelDayTime24";
+            this.labelDayTime24.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime24.TabIndex = 5;
+            this.labelDayTime24.Text = "labelDayTime24";
+            this.labelDayTime24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime24.TimeIndex = 4;
+            // 
+            // labelDayTime25
+            // 
+            this.labelDayTime25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime25.AutoSize = true;
+            this.labelDayTime25.Location = new System.Drawing.Point(3, 145);
+            this.labelDayTime25.Name = "labelDayTime25";
+            this.labelDayTime25.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime25.TabIndex = 6;
+            this.labelDayTime25.Text = "labelDayTime25";
+            this.labelDayTime25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime25.TimeIndex = 5;
+            // 
+            // labelDayTime26
+            // 
+            this.labelDayTime26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime26.AutoSize = true;
+            this.labelDayTime26.Location = new System.Drawing.Point(3, 174);
+            this.labelDayTime26.Name = "labelDayTime26";
+            this.labelDayTime26.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime26.TabIndex = 7;
+            this.labelDayTime26.Text = "labelDayTime26";
+            this.labelDayTime26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime26.TimeIndex = 6;
+            // 
+            // labelDayTime27
+            // 
+            this.labelDayTime27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime27.AutoSize = true;
+            this.labelDayTime27.Location = new System.Drawing.Point(3, 203);
+            this.labelDayTime27.Name = "labelDayTime27";
+            this.labelDayTime27.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime27.TabIndex = 8;
+            this.labelDayTime27.Text = "labelDayTime27";
+            this.labelDayTime27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime27.TimeIndex = 7;
+            // 
+            // labelDayTime28
+            // 
+            this.labelDayTime28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime28.AutoSize = true;
+            this.labelDayTime28.Location = new System.Drawing.Point(3, 232);
+            this.labelDayTime28.Name = "labelDayTime28";
+            this.labelDayTime28.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime28.TabIndex = 9;
+            this.labelDayTime28.Text = "labelDayTime28";
+            this.labelDayTime28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime28.TimeIndex = 8;
+            // 
+            // labelDayTime29
+            // 
+            this.labelDayTime29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime29.AutoSize = true;
+            this.labelDayTime29.Location = new System.Drawing.Point(3, 261);
+            this.labelDayTime29.Name = "labelDayTime29";
+            this.labelDayTime29.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime29.TabIndex = 10;
+            this.labelDayTime29.Text = "labelDayTime29";
+            this.labelDayTime29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime29.TimeIndex = 9;
+            // 
+            // labelDayTime30
+            // 
+            this.labelDayTime30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime30.AutoSize = true;
+            this.labelDayTime30.Location = new System.Drawing.Point(3, 290);
+            this.labelDayTime30.Name = "labelDayTime30";
+            this.labelDayTime30.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime30.TabIndex = 11;
+            this.labelDayTime30.Text = "labelDayTime30";
+            this.labelDayTime30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime30.TimeIndex = 10;
+            // 
+            // labelDayTime31
+            // 
+            this.labelDayTime31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime31.AutoSize = true;
+            this.labelDayTime31.Location = new System.Drawing.Point(3, 319);
+            this.labelDayTime31.Name = "labelDayTime31";
+            this.labelDayTime31.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime31.TabIndex = 12;
+            this.labelDayTime31.Text = "labelDayTime31";
+            this.labelDayTime31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime31.TimeIndex = 11;
+            // 
+            // labelDayTime32
+            // 
+            this.labelDayTime32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime32.AutoSize = true;
+            this.labelDayTime32.Location = new System.Drawing.Point(3, 348);
+            this.labelDayTime32.Name = "labelDayTime32";
+            this.labelDayTime32.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime32.TabIndex = 13;
+            this.labelDayTime32.Text = "labelDayTime32";
+            this.labelDayTime32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime32.TimeIndex = 12;
+            // 
+            // labelDayTime33
+            // 
+            this.labelDayTime33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime33.AutoSize = true;
+            this.labelDayTime33.Location = new System.Drawing.Point(3, 377);
+            this.labelDayTime33.Name = "labelDayTime33";
+            this.labelDayTime33.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime33.TabIndex = 14;
+            this.labelDayTime33.Text = "labelDayTime33";
+            this.labelDayTime33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime33.TimeIndex = 13;
+            // 
+            // labelDayTime34
+            // 
+            this.labelDayTime34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime34.AutoSize = true;
+            this.labelDayTime34.Location = new System.Drawing.Point(3, 406);
+            this.labelDayTime34.Name = "labelDayTime34";
+            this.labelDayTime34.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime34.TabIndex = 15;
+            this.labelDayTime34.Text = "labelDayTime34";
+            this.labelDayTime34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime34.TimeIndex = 14;
+            // 
+            // labelDayTime35
+            // 
+            this.labelDayTime35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime35.AutoSize = true;
+            this.labelDayTime35.Location = new System.Drawing.Point(3, 435);
+            this.labelDayTime35.Name = "labelDayTime35";
+            this.labelDayTime35.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime35.TabIndex = 16;
+            this.labelDayTime35.Text = "labelDayTime35";
+            this.labelDayTime35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime35.TimeIndex = 15;
+            // 
+            // labelDayTime36
+            // 
+            this.labelDayTime36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime36.AutoSize = true;
+            this.labelDayTime36.Location = new System.Drawing.Point(3, 464);
+            this.labelDayTime36.Name = "labelDayTime36";
+            this.labelDayTime36.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime36.TabIndex = 17;
+            this.labelDayTime36.Text = "labelDayTime36";
+            this.labelDayTime36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime36.TimeIndex = 16;
+            // 
+            // labelDayTime37
+            // 
+            this.labelDayTime37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime37.AutoSize = true;
+            this.labelDayTime37.Location = new System.Drawing.Point(3, 493);
+            this.labelDayTime37.Name = "labelDayTime37";
+            this.labelDayTime37.Size = new System.Drawing.Size(525, 29);
+            this.labelDayTime37.TabIndex = 18;
+            this.labelDayTime37.Text = "labelDayTime37";
+            this.labelDayTime37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime37.TimeIndex = 17;
+            // 
+            // labelDayTime38
+            // 
+            this.labelDayTime38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDayTime38.AutoSize = true;
+            this.labelDayTime38.Location = new System.Drawing.Point(3, 522);
+            this.labelDayTime38.Name = "labelDayTime38";
+            this.labelDayTime38.Size = new System.Drawing.Size(525, 33);
+            this.labelDayTime38.TabIndex = 19;
+            this.labelDayTime38.Text = "labelDayTime38";
+            this.labelDayTime38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDayTime38.TimeIndex = 18;
             // 
             // Form1
             // 
@@ -747,45 +801,45 @@
         private System.Windows.Forms.Button openBookButton;
         private System.Windows.Forms.Button buttonOutDay;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLeft;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelRight;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
+        private LabelDayTime labelDayTime1;
+        private LabelDayTime labelDayTime19;
+        private LabelDayTime labelDayTime18;
+        private LabelDayTime labelDayTime17;
+        private LabelDayTime labelDayTime16;
+        private LabelDayTime labelDayTime15;
+        private LabelDayTime labelDayTime14;
+        private LabelDayTime labelDayTime13;
+        private LabelDayTime labelDayTime12;
+        private LabelDayTime labelDayTime11;
+        private LabelDayTime labelDayTime10;
+        private LabelDayTime labelDayTime9;
+        private LabelDayTime labelDayTime8;
+        private LabelDayTime labelDayTime7;
+        private LabelDayTime labelDayTime6;
+        private LabelDayTime labelDayTime5;
+        private LabelDayTime labelDayTime4;
+        private LabelDayTime labelDayTime3;
+        private LabelDayTime labelDayTime2;
+        private LabelDayTime labelDayTime38;
+        private LabelDayTime labelDayTime37;
+        private LabelDayTime labelDayTime36;
+        private LabelDayTime labelDayTime35;
+        private LabelDayTime labelDayTime34;
+        private LabelDayTime labelDayTime33;
+        private LabelDayTime labelDayTime32;
+        private LabelDayTime labelDayTime31;
+        private LabelDayTime labelDayTime30;
+        private LabelDayTime labelDayTime29;
+        private LabelDayTime labelDayTime28;
+        private LabelDayTime labelDayTime27;
+        private LabelDayTime labelDayTime26;
+        private LabelDayTime labelDayTime25;
+        private LabelDayTime labelDayTime24;
+        private LabelDayTime labelDayTime23;
+        private LabelDayTime labelDayTime22;
+        private LabelDayTime labelDayTime21;
+        private LabelDayTime labelDayTime20;
     }
 }
 

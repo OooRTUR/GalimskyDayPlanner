@@ -22,10 +22,13 @@ namespace GalimskyDayPlanner
         {
             calendTasks = new List<CalendTask>(19);
             Console.WriteLine(calendTasks.Capacity);
-            for (int i = 0; i < calendTasks.Capacity; i++)
+            for (int i = calendTasks.Capacity-1; i >=0;i--)// calendTasks.Capacity; i++)
             {
                 calendTasks.Add(new CalendTask());
-                calendTasks.Last().text = "adadk" + i;
+                string addStr = "";
+                if (i < 10)
+                    addStr = "0";
+                calendTasks.Last().text = "adadk" +addStr+ i;
             }
         }
 
@@ -42,9 +45,14 @@ namespace GalimskyDayPlanner
 
     }
 
-    public class CalendTask
+    public class CalendTask: IComparable<CalendTask>
     {
         public string text;
         public bool isDone;
+
+        public int CompareTo(CalendTask other)
+        {
+            return this.text.CompareTo(other.text);
+        }
     }
 }

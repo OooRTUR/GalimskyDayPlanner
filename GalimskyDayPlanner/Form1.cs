@@ -43,11 +43,18 @@ namespace GalimskyDayPlanner
             {
                 Console.WriteLine("Задач на сегодня нет");
             }
-            Console.WriteLine(Data.dayTasks);
-            for(int i=0; i < tableLayoutPanelRight.Controls.Count; i++)
+            //Console.WriteLine(Data.dayTasks);
+            Console.WriteLine();
+            for (int i = 0; i <tableLayoutPanelRight.Controls.Count; i++)
             {
-                Console.WriteLine(tableLayoutPanelRight.Controls[i].Name);
+                Console.WriteLine(tableLayoutPanelLeft.Controls[i].Text = i.ToString()+" a");
             }
+            /*
+            for (int i = tableLayoutPanelRight.Controls.Count - 1; i >= 0; i--)
+            {
+                Console.WriteLine(tableLayoutPanelRight.Controls[i].Text = i.ToString()+i.ToString());
+            }
+            */
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -115,7 +122,13 @@ namespace GalimskyDayPlanner
             Data.dayTasks.Add(new DayTasks());
             Console.WriteLine(Data.dayTasks.Count);
             Data.dayTasks.Last().SetExample();
+            //Data.dayTasks.Last().calendTasks.Sort();
             Console.WriteLine(Data.dayTasks.Last());
+
+            for(int i=0;i <tableLayoutPanelLeft.Controls.Count; i++)
+            {
+                tableLayoutPanelLeft.Controls[i].Text = Data.dayTasks.Last().calendTasks[i].text;
+            }
         }
     }
 }
