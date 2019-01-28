@@ -43,6 +43,13 @@ namespace GalimskyDayPlanner
             {
                 Console.WriteLine("Задач на сегодня нет");
             }
+            Console.WriteLine(Data.dayTasks);
+
+            for(int i=0; i<panel1.Controls.Count; i++)
+            {
+                Console.WriteLine(panel1.Controls[i].Name);
+                Console.WriteLine("   "+panel1.Controls[i].Controls[0].Name +" "+ panel1.Controls[i].Controls[1].Name);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -95,6 +102,22 @@ namespace GalimskyDayPlanner
             phoneBookForm.Show();
             phoneBookForm.FormClosed += TaskInputForm_Closed;
             Enabled = false;
+        }
+
+        private void GetDayTasks()
+        {
+            for(int i=0; i< Data.dayTasks.Last().calendTasks.Count; i++)
+            {
+
+            }
+        }
+
+        private void buttonOutDay_Click(object sender, EventArgs e)
+        {
+            Data.dayTasks.Add(new DayTasks());
+            Console.WriteLine(Data.dayTasks.Count);
+            Data.dayTasks.Last().SetExample();
+            Console.WriteLine(Data.dayTasks.Last());
         }
     }
 }

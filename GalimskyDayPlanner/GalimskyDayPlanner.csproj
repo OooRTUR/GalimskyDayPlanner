@@ -54,9 +54,7 @@
     <Compile Include="CreatePhoneForm.Designer.cs">
       <DependentUpon>CreatePhoneForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DATA\CalendTask.cs" />
     <Compile Include="DATA\Data.cs" />
-    <Compile Include="DATA\DayTasks.cs" />
     <Compile Include="DATA\LabelPhone.cs">
       <SubType>Component</SubType>
     </Compile>
