@@ -35,6 +35,16 @@ namespace GalimskyDayPlanner
             SetDate(DateTime.Now);
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            //if(Data.dayTasks[])
+            if (Data.dayTasks == null)
+            {
+                Console.WriteLine("Задач на сегодня нет");
+            }
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 

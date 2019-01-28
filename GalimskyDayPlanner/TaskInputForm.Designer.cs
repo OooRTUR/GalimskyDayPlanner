@@ -32,14 +32,15 @@
             this.applyTaskButton = new System.Windows.Forms.Button();
             this.cancelEditButton = new System.Windows.Forms.Button();
             this.deleteTaskButton = new System.Windows.Forms.Button();
+            this.checkBoxDone = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 36);
+            this.textBox1.Location = new System.Drawing.Point(13, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(509, 157);
+            this.textBox1.Size = new System.Drawing.Size(509, 149);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -73,11 +74,22 @@
             this.deleteTaskButton.UseVisualStyleBackColor = true;
             this.deleteTaskButton.Click += new System.EventHandler(this.deleteTaskButton_Click);
             // 
+            // checkBoxDone
+            // 
+            this.checkBoxDone.AutoSize = true;
+            this.checkBoxDone.Location = new System.Drawing.Point(13, 167);
+            this.checkBoxDone.Name = "checkBoxDone";
+            this.checkBoxDone.Size = new System.Drawing.Size(86, 17);
+            this.checkBoxDone.TabIndex = 4;
+            this.checkBoxDone.Text = "Выполнено!";
+            this.checkBoxDone.UseVisualStyleBackColor = true;
+            // 
             // TaskInputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 234);
+            this.Controls.Add(this.checkBoxDone);
             this.Controls.Add(this.deleteTaskButton);
             this.Controls.Add(this.cancelEditButton);
             this.Controls.Add(this.applyTaskButton);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button applyTaskButton;
         private System.Windows.Forms.Button cancelEditButton;
         private System.Windows.Forms.Button deleteTaskButton;
+        private System.Windows.Forms.CheckBox checkBoxDone;
     }
 }

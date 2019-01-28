@@ -9,5 +9,6 @@ namespace GalimskyDayPlanner
     public static class Data
     {
         public static List<PhoneNumber> numbers = new List<PhoneNumber>();
+        public static List<DayTasks> dayTasks = new List<DayTasks>(); //лист задач для каждого дня
     }
 }

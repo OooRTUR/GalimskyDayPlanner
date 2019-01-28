@@ -68,5 +68,10 @@ namespace GalimskyDayPlanner
             form1.label.Text = "";
             Close();
         }
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            Console.WriteLine("Закрыли форму");
+        }
     }
 }
