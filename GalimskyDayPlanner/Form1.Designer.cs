@@ -235,7 +235,7 @@
             this.label37.Location = new System.Drawing.Point(122, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(472, 21);
-            this.label37.TabIndex = 1;
+            this.label37.TabIndex = 18;
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label37.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -277,7 +277,7 @@
             this.label35.Location = new System.Drawing.Point(122, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(472, 21);
-            this.label35.TabIndex = 1;
+            this.label35.TabIndex = 17;
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label35.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -319,7 +319,7 @@
             this.label33.Location = new System.Drawing.Point(122, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(472, 21);
-            this.label33.TabIndex = 1;
+            this.label33.TabIndex = 16;
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label33.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -361,7 +361,7 @@
             this.label31.Location = new System.Drawing.Point(122, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(472, 21);
-            this.label31.TabIndex = 1;
+            this.label31.TabIndex = 15;
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label31.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -403,7 +403,7 @@
             this.label29.Location = new System.Drawing.Point(122, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(472, 21);
-            this.label29.TabIndex = 1;
+            this.label29.TabIndex = 14;
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label29.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -445,7 +445,7 @@
             this.label27.Location = new System.Drawing.Point(122, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(472, 21);
-            this.label27.TabIndex = 1;
+            this.label27.TabIndex = 13;
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label27.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -487,7 +487,7 @@
             this.label25.Location = new System.Drawing.Point(122, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(472, 21);
-            this.label25.TabIndex = 1;
+            this.label25.TabIndex = 12;
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label25.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -529,7 +529,7 @@
             this.label23.Location = new System.Drawing.Point(122, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(472, 21);
-            this.label23.TabIndex = 1;
+            this.label23.TabIndex = 11;
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label23.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -571,7 +571,7 @@
             this.label21.Location = new System.Drawing.Point(122, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(472, 21);
-            this.label21.TabIndex = 1;
+            this.label21.TabIndex = 10;
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label21.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -613,7 +613,7 @@
             this.label19.Location = new System.Drawing.Point(122, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(472, 21);
-            this.label19.TabIndex = 1;
+            this.label19.TabIndex = 9;
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label19.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -655,7 +655,7 @@
             this.label17.Location = new System.Drawing.Point(122, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(472, 21);
-            this.label17.TabIndex = 1;
+            this.label17.TabIndex = 8;
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label17.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -697,7 +697,7 @@
             this.label15.Location = new System.Drawing.Point(122, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(472, 21);
-            this.label15.TabIndex = 1;
+            this.label15.TabIndex = 7;
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label15.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -739,7 +739,7 @@
             this.label13.Location = new System.Drawing.Point(122, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(472, 21);
-            this.label13.TabIndex = 1;
+            this.label13.TabIndex = 6;
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label13.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -781,7 +781,7 @@
             this.label11.Location = new System.Drawing.Point(122, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(472, 21);
-            this.label11.TabIndex = 1;
+            this.label11.TabIndex = 5;
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label11.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -823,7 +823,7 @@
             this.label9.Location = new System.Drawing.Point(122, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(472, 21);
-            this.label9.TabIndex = 1;
+            this.label9.TabIndex = 4;
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label9.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -865,7 +865,7 @@
             this.label7.Location = new System.Drawing.Point(122, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(472, 21);
-            this.label7.TabIndex = 1;
+            this.label7.TabIndex = 3;
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label7.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -907,7 +907,7 @@
             this.label5.Location = new System.Drawing.Point(122, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(472, 21);
-            this.label5.TabIndex = 1;
+            this.label5.TabIndex = 2;
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Click += new System.EventHandler(this.labelTask_Click);
             // 
@@ -991,7 +991,7 @@
             this.label2.Location = new System.Drawing.Point(122, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(472, 21);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Click += new System.EventHandler(this.labelTask_Click);
             // 
