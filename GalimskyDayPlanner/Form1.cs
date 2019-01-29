@@ -31,30 +31,22 @@ namespace GalimskyDayPlanner
         public Form1()
         {
             InitializeComponent();
-            //form = GetInstance();
-            SetDate(DateTime.Now);
         }
 
+        //=================================================================================
+        //CALLBACK METHODS
+        //=================================================================================
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+            Data.date = Utils.GetDateCode(DateTime.Now);
+            TimeSpan ts = new TimeSpan(0, 0, 0);
+            SetDate(DateTime.Now);
+            if(!Data.days.ContainsKey(Data.date))
+                Console.WriteLine("На сегодня задач нет");
             //if(Data.dayTasks[])
-            if (Data.dayTasks == null)
-            {
-                Console.WriteLine("Задач на сегодня нет");
-            }
-            //Console.WriteLine(Data.dayTasks);
-            Console.WriteLine();
-            for (int i = 0; i <tableLayoutPanelMain.Controls.Count; i++)
-            {
-                Console.WriteLine(tableLayoutPanelMain.Controls[i].Controls[0].Text = i.ToString()+" a");
-            }
-            /*
-            for (int i = tableLayoutPanelRight.Controls.Count - 1; i >= 0; i--)
-            {
-                Console.WriteLine(tableLayoutPanelRight.Controls[i].Text = i.ToString()+i.ToString());
-            }
-            */
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -64,20 +56,10 @@ namespace GalimskyDayPlanner
         
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
-            SetDate(monthCalendar1.SelectionRange.Start.Date);
-        }
-
-        private void SetDate(DateTime date)
-        {
-            string week = date.DayOfWeek.ToString().ToUpper();
-            string day = date.Day.ToString();
-            string month = date.ToString("MMMM");
-            string year = date.Year.ToString();
-            string isToday = date.Date == DateTime.Now.Date ? " (сегодня)" : "";
-
-            TestLabel.Text = date.Date.ToString()+" | " + DateTime.Now.Date.ToString();
-
-            CurrentDateTitle.Text = "Планы на " + week + " " + day + " " + month + " " + year + isToday;
+            Data.dateTime = monthCalendar1.SelectionRange.Start.Date;
+            Data.date = Utils.GetDateCode(Data.dateTime);
+            SetDate( Data.dateTime);
+            OutData();
         }
 
         //для всех labelTask
@@ -109,28 +91,84 @@ namespace GalimskyDayPlanner
             Enabled = false;
         }
 
-        private void GetDayTasks()
-        {
-            for(int i=0; i< Data.dayTasks.Last().calendTasks.Count; i++)
-            {
-
-            }
-        }
-
         private void buttonOutDay_Click(object sender, EventArgs e)
         {
-            Data.dayTasks.Add(new DayTasks());
-            Console.WriteLine(Data.dayTasks.Count);
-            Data.dayTasks.Last().SetExample();
-            //Data.dayTasks.Last().calendTasks.Sort();
-            Console.WriteLine(Data.dayTasks.Last());
+            OutData();
+        }
+        private void buttonSetExample_Click(object sender, EventArgs e)
+        {
+            SetExampleData();
+        }
 
-            for(int i=0;i <tableLayoutPanelMain.Controls.Count; i++)
+
+        //=================================================================================
+        //FUNCTIONAL METHODS
+        //=================================================================================
+        private void SetDate(DateTime date)
+        {
+            string week = date.DayOfWeek.ToString().ToUpper();
+            string day = date.Day.ToString();
+            string month = date.ToString("MMMM");
+            string year = date.Year.ToString();
+            string isToday = date.Date == DateTime.Now.Date ? " (сегодня)" : "";
+
+            TestLabel.Text = date.Date.ToString() + " | " + DateTime.Now.Date.ToString();
+
+            CurrentDateTitle.Text = "Планы на " + week + " " + day + " " + month + " " + year + isToday;
+        }
+
+        private void OutData()
+        {
+            Console.WriteLine("Вывод данных на: "+Data.date);
+            if (!Data.days.ContainsKey(Data.date))
             {
-                tableLayoutPanelMain.Controls[i].Controls[0].Text = Data.dayTasks.Last().calendTasks[i].text;
-                //tableLayoutPanelMain.Controls[i].Controls[1].Text = Data.dayTasks.Last().calendTasks[i].text;
-
+                Console.WriteLine("На сегодня задач нет");
+                ClearData();
+            }
+            else
+            {
+                Console.WriteLine("Задачи дня: " + Data.days[Data.date]);
+                ClearData();
+                for (int i = 0; i < tableLayoutPanelMain.Controls.Count; i++)
+                {
+                    if (Data.days[Data.date].tasks.ContainsKey(i))
+                        tableLayoutPanelMain.Controls[i].Controls[0].Text = Data.days[Data.date].tasks[i].text;
+                }
             }
         }
+        private void ClearData()
+        {
+            for (int i = 0; i < tableLayoutPanelMain.Controls.Count; i++)
+                tableLayoutPanelMain.Controls[i].Controls[0].Text = "";
+        }
+
+        private void SetExampleData()
+        {
+            DateTime date1 = new DateTime(2019, 01, 29);
+            string textDate1 = Utils.GetDateCode(date1);
+            Day day1 = new Day();
+            day1.tasks = new Dictionary<int,CalendTask>(19);
+            day1.tasks.Add(15,new CalendTask("ааа"));
+            day1.tasks.Add(13,new CalendTask("bbb"));
+            day1.tasks.Add(10,new CalendTask("fgedf"));
+            Data.days.Add(textDate1, day1);
+            Console.WriteLine(Data.days.Last());
+
+            DateTime date2 = new DateTime(2019, 01, 25);
+            string textDate2 = Utils.GetDateCode(date2);
+            Day day2 = new Day();
+            day2.tasks = new Dictionary<int, CalendTask>(19);
+            day2.tasks.Add(3, new CalendTask("keoekeke"));
+            day2.tasks.Add(5, new CalendTask("lelaualal"));
+            day2.tasks.Add(19, new CalendTask("gogoodood"));
+            Data.days.Add(textDate2, day2);
+            Console.WriteLine(Data.days.Last());
+        }
+        private void SaveData()
+        {
+
+        }
+
+        
     }
 }

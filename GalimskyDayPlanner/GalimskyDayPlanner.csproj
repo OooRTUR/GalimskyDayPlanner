@@ -59,6 +59,7 @@
       <DependentUpon>CreatePhoneForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DATA\Data.cs" />
+    <Compile Include="DATA\Utils.cs" />
     <Compile Include="UserControls\LabelDayTime.cs">
       <SubType>Component</SubType>
     </Compile>

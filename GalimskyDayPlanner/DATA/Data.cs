@@ -8,37 +8,22 @@ namespace GalimskyDayPlanner
 {
     public static class Data
     {
+        public static string date;
+        public static DateTime dateTime;
         public static List<PhoneNumber> numbers = new List<PhoneNumber>();
-        public static List<DayTasks> dayTasks = new List<DayTasks>(); //лист задач для каждого дня
+        public static Dictionary<string,Day> days = new Dictionary<string,Day>(); //лист задач для каждого дня
 
        
     }
 
-    public class DayTasks
+    public class Day
     {
-        public List<CalendTask> calendTasks; //задачи на день, их 19 штук
-
-        public void SetExample()
-        {
-            calendTasks = new List<CalendTask>(19);
-            Console.WriteLine(calendTasks.Capacity);
-            for (int i = calendTasks.Capacity-1; i >=0;i--)// calendTasks.Capacity; i++)
-            {
-                calendTasks.Add(new CalendTask());
-                string addStr = "";
-                if (i < 10)
-                    addStr = "0";
-                calendTasks.Last().text = "adadk" +addStr+ i;
-            }
-        }
-
+        public Dictionary<int,CalendTask> tasks; //задачи на день, их 19 штук
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            for (int i=0; i < calendTasks.Count; i++)
-            {
-                sb.Append(calendTasks[i].text+Environment.NewLine);
-            }
+            foreach (var elem in tasks)
+                sb.Append(elem.Key + " " + elem.Value + Environment.NewLine);
             return sb.ToString();
         }
 
@@ -50,9 +35,19 @@ namespace GalimskyDayPlanner
         public string text;
         public bool isDone;
 
+        public CalendTask(string text)
+        {
+            this.text = text;
+            isDone = false;
+        }
+
         public int CompareTo(CalendTask other)
         {
             return this.text.CompareTo(other.text);
+        }
+        public override string ToString()
+        {
+            return text;
         }
     }
 }
