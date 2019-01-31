@@ -12,10 +12,7 @@ namespace GalimskyDayPlanner
         public static DateTime dateTime;
         public static List<PhoneNumber> numbers = new List<PhoneNumber>();
         public static Dictionary<string,Day> days = new Dictionary<string,Day>(); //лист задач для каждого дня
-
-       
     }
-
     public class Day
     {
         public Dictionary<int,CalendTask> tasks; //задачи на день, их 19 штук
@@ -26,10 +23,7 @@ namespace GalimskyDayPlanner
                 sb.Append(elem.Key + " " + elem.Value + Environment.NewLine);
             return sb.ToString();
         }
-
-
     }
-
     public class CalendTask: IComparable<CalendTask>
     {
         public string text;
@@ -39,6 +33,12 @@ namespace GalimskyDayPlanner
         {
             this.text = text;
             isDone = false;
+        }
+
+        public CalendTask(string text, bool isDone)
+        {
+            this.text = text;
+            this.isDone = isDone;
         }
 
         public int CompareTo(CalendTask other)

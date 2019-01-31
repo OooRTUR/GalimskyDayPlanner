@@ -62,17 +62,20 @@ namespace GalimskyDayPlanner
             OutData();
         }
 
-        //для всех labelTask
+        //для всех labelTask, передаем данные в TaskInputForm и отображаем форму
         private void labelTask_Click(object sender, EventArgs e)
         {
-            label = (Label)sender;
-            //label.Text = "text";
-
+            label = (Label)sender;  //записали label sender-а
             taskInputForm =  TaskInputForm.GetInstance();
-            taskInputForm.form1 = this;
-            taskInputForm.startText = label.Text;
-            if(taskInputForm.textBox!=null)
-                taskInputForm.textBox.Text = label.Text;
+            //taskInputForm.startText = label.Text;
+            //if(taskInputForm.textBox!=null)
+            //taskInputForm.textBox.Text = label.Text;
+
+            //передаем данные о Data
+            taskInputForm.keyDate = Data.date;
+            taskInputForm.keyTime = 18- label.TabIndex; //используем TabIndex в качестве ключа (временно???)
+            //теперь можно обращаться к Data
+
             taskInputForm.Show();
             taskInputForm.FormClosed += TaskInputForm_Closed;
             Enabled = false;
@@ -98,6 +101,12 @@ namespace GalimskyDayPlanner
         private void buttonSetExample_Click(object sender, EventArgs e)
         {
             SetExampleData();
+        }
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            OutData();
+            Console.WriteLine("Форма активирована");
         }
 
 
@@ -132,7 +141,14 @@ namespace GalimskyDayPlanner
                 for (int i = 0; i < tableLayoutPanelMain.Controls.Count; i++)
                 {
                     if (Data.days[Data.date].tasks.ContainsKey(i))
+                    {
                         tableLayoutPanelMain.Controls[i].Controls[0].Text = Data.days[Data.date].tasks[i].text;
+                        tableLayoutPanelMain.Controls[i].Controls[0].BackColor = GetColor(Data.days[Data.date].tasks[i].isDone);
+                    }
+                    else
+                    {
+                        tableLayoutPanelMain.Controls[i].Controls[0].BackColor = GetColor(false);
+                    }
                 }
             }
         }
@@ -144,7 +160,7 @@ namespace GalimskyDayPlanner
 
         private void SetExampleData()
         {
-            DateTime date1 = new DateTime(2019, 01, 29);
+            DateTime date1 = DateTime.Now;
             string textDate1 = Utils.GetDateCode(date1);
             Day day1 = new Day();
             day1.tasks = new Dictionary<int,CalendTask>(19);
@@ -167,6 +183,14 @@ namespace GalimskyDayPlanner
         private void SaveData()
         {
 
+        }
+
+        private Color GetColor(bool value)
+        {
+            if (value)
+                return Color.Green;
+            else
+                return Color.White;
         }
 
         
