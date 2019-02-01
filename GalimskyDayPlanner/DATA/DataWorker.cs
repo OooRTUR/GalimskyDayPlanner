@@ -59,15 +59,113 @@ namespace GalimskyDayPlanner
                 int counter = 0;
                 string line;
                 Console.WriteLine(Path.GetFileName(file));
+                Console.WriteLine(GetDate(file));
                 StreamReader reader = new StreamReader(file);
                 while((line = reader.ReadLine()) != null){
-                    Console.WriteLine(line);
+                    //Console.WriteLine(line);
+                    TaskTmp task = new TaskTmp();
+                    task = GetTask(line);
+                    //Console.WriteLine(task);
                     counter++;
                 }
                 reader.Close();
                 Console.WriteLine();
 
-                /*
+                
+            }
+        }
+        //ключ получили
+        private string GetDate(string str)
+        {
+            int count=0;
+            int k=0;
+            string searchStr = "__.";
+            StringBuilder sb = new StringBuilder();
+            for(int i=1;i < str.Length; i++)
+            {
+                if (str[i] == searchStr[k])
+                {
+                    string tmp = str.Substring(i - (count-1), count-1);
+                    sb.Append(tmp);
+                    count = 0;
+                    k++;
+                    if (k >= searchStr.Length)
+                        break;
+                }
+                count++;
+            }
+            return sb.ToString();
+        }
+        private TaskTmp GetTask(string str)
+        {
+            string searchStr = "::";
+            int count = 0;
+            int k = 0;
+            TaskTmp task = new TaskTmp();
+            for(int i=0; i<str.Length; i++)
+            {
+                if (str[i] == searchStr[k])
+                {
+                    string tmp = str.Substring(i - count, count);
+                    count = 0;
+                    Console.WriteLine(tmp);
+                    /*
+                    switch (k)
+                    {
+                        case 0:
+                            task.SetTask(tmp);
+                            break;
+                        case 1:
+                            task.SetNum(tmp);
+                            break;
+                        case 2:
+                            task.SetDone(tmp);
+                            break;
+                        default:
+                            break;
+                    }
+                    */
+                    k++;
+                    if (k >= searchStr.Length)
+                        break;
+                }
+                count++;
+            }
+            return task;
+        }
+    }
+
+    public class TaskTmp
+    {
+        public string task;
+        public int num;
+        public bool isDone;
+        
+
+        public void SetTask(string str)
+        {
+            task = str;
+        }
+        public void SetNum(string str)
+        {
+            num = Int32.Parse(str);
+        }
+        public void SetDone(string str)
+        {
+            if (str[0] == '1')
+                isDone = true;
+            else
+                isDone = false;
+        }
+
+        public override string ToString()
+        {
+            return task + " | " + num + " | " + isDone;
+        }
+    }
+}
+
+/* энкрипт здесь хорошо работает, надо запомнить
                 using (FileStream fs = File.Open(file,FileMode.Open,FileAccess.Read,FileShare.None))
                 {
                     byte[] buffer;
@@ -83,9 +181,3 @@ namespace GalimskyDayPlanner
                     Console.WriteLine(res);
                 }
                 */
-            }
-        }
-
-
-    }
-}
