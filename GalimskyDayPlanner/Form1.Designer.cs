@@ -92,6 +92,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonSetExample = new System.Windows.Forms.Button();
+            this.buttonSaveData = new System.Windows.Forms.Button();
+            this.buttonRun = new System.Windows.Forms.Button();
+            this.buttonReadData = new System.Windows.Forms.Button();
             this.tableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
@@ -1018,11 +1021,44 @@
             this.buttonSetExample.UseVisualStyleBackColor = true;
             this.buttonSetExample.Click += new System.EventHandler(this.buttonSetExample_Click);
             // 
+            // buttonSaveData
+            // 
+            this.buttonSaveData.Location = new System.Drawing.Point(628, 402);
+            this.buttonSaveData.Name = "buttonSaveData";
+            this.buttonSaveData.Size = new System.Drawing.Size(157, 23);
+            this.buttonSaveData.TabIndex = 8;
+            this.buttonSaveData.Text = "SaveData";
+            this.buttonSaveData.UseVisualStyleBackColor = true;
+            this.buttonSaveData.Click += new System.EventHandler(this.buttonSaveData_Click);
+            // 
+            // buttonRun
+            // 
+            this.buttonRun.Location = new System.Drawing.Point(631, 344);
+            this.buttonRun.Name = "buttonRun";
+            this.buttonRun.Size = new System.Drawing.Size(154, 23);
+            this.buttonRun.TabIndex = 9;
+            this.buttonRun.Text = "Run!";
+            this.buttonRun.UseVisualStyleBackColor = true;
+            this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
+            // 
+            // buttonReadData
+            // 
+            this.buttonReadData.Location = new System.Drawing.Point(631, 374);
+            this.buttonReadData.Name = "buttonReadData";
+            this.buttonReadData.Size = new System.Drawing.Size(154, 23);
+            this.buttonReadData.TabIndex = 10;
+            this.buttonReadData.Text = "ReadData";
+            this.buttonReadData.UseVisualStyleBackColor = true;
+            this.buttonReadData.Click += new System.EventHandler(this.buttonReadData_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 606);
+            this.Controls.Add(this.buttonReadData);
+            this.Controls.Add(this.buttonRun);
+            this.Controls.Add(this.buttonSaveData);
             this.Controls.Add(this.buttonSetExample);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Controls.Add(this.buttonOutDay);
@@ -1142,6 +1178,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonSetExample;
+        private System.Windows.Forms.Button buttonSaveData;
+        private System.Windows.Forms.Button buttonRun;
+        private System.Windows.Forms.Button buttonReadData;
     }
 }
 

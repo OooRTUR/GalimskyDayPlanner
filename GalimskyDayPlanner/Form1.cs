@@ -24,6 +24,7 @@ namespace GalimskyDayPlanner
             return form;
         }*/
 
+
         public Label label;
         public TaskInputForm taskInputForm;
         public PhoneBookForm phoneBookForm;
@@ -67,11 +68,9 @@ namespace GalimskyDayPlanner
         {
             label = (Label)sender;  //записали label sender-а
             taskInputForm =  TaskInputForm.GetInstance();
-            //taskInputForm.startText = label.Text;
-            //if(taskInputForm.textBox!=null)
-            //taskInputForm.textBox.Text = label.Text;
 
             //передаем данные о Data
+            taskInputForm.date = Data.dateTime;
             taskInputForm.keyDate = Data.date;
             taskInputForm.keyTime = 18- label.TabIndex; //используем TabIndex в качестве ключа (временно???)
             //теперь можно обращаться к Data
@@ -110,6 +109,23 @@ namespace GalimskyDayPlanner
         }
 
 
+        private void buttonRun_Click(object sender, EventArgs e)
+        {
+            DataWorker.get().Run();
+        }
+
+        private void buttonReadData_Click(object sender, EventArgs e)
+        {
+            DataWorker.get().ReadAllFiles();
+        }
+
+        private void buttonSaveData_Click(object sender, EventArgs e)
+        {
+            DataWorker.get().OverWriteAllFiles();
+        }
+
+
+
         //=================================================================================
         //FUNCTIONAL METHODS
         //=================================================================================
@@ -136,7 +152,7 @@ namespace GalimskyDayPlanner
             }
             else
             {
-                Console.WriteLine("Задачи дня: " + Data.days[Data.date]);
+                Console.WriteLine("Задачи дня: "+Environment.NewLine + Data.days[Data.date]);
                 ClearData();
                 for (int i = 0; i < tableLayoutPanelMain.Controls.Count; i++)
                 {
@@ -163,6 +179,7 @@ namespace GalimskyDayPlanner
             DateTime date1 = DateTime.Now;
             string textDate1 = Utils.GetDateCode(date1);
             Day day1 = new Day();
+            day1.dateTime = date1;
             day1.tasks = new Dictionary<int,CalendTask>(19);
             day1.tasks.Add(15,new CalendTask("ааа"));
             day1.tasks.Add(13,new CalendTask("bbb"));
@@ -173,6 +190,7 @@ namespace GalimskyDayPlanner
             DateTime date2 = new DateTime(2019, 01, 25);
             string textDate2 = Utils.GetDateCode(date2);
             Day day2 = new Day();
+            day2.dateTime = date2;
             day2.tasks = new Dictionary<int, CalendTask>(19);
             day2.tasks.Add(3, new CalendTask("keoekeke"));
             day2.tasks.Add(5, new CalendTask("lelaualal"));
@@ -193,6 +211,6 @@ namespace GalimskyDayPlanner
                 return Color.White;
         }
 
-        
+       
     }
 }

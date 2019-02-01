@@ -11,7 +11,11 @@ namespace GalimskyDayPlanner
         public static string GetDateCode(DateTime d)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(d.Year + d.Month + d.Day);
+            sb.Append(d.Year);
+            sb.Append("_");
+            sb.Append(d.Month);
+            sb.Append("_");
+            sb.Append(d.Day);
             return sb.ToString();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,21 +14,26 @@ namespace GalimskyDayPlanner
         public static List<PhoneNumber> numbers = new List<PhoneNumber>();
         public static Dictionary<string,Day> days = new Dictionary<string,Day>(); //лист задач для каждого дня
     }
-    public class Day
+    public class Day 
     {
+        public DateTime dateTime;
         public Dictionary<int,CalendTask> tasks; //задачи на день, их 19 штук
+
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             foreach (var elem in tasks)
-                sb.Append(elem.Key + " " + elem.Value + Environment.NewLine);
+            {
+                sb.Append(elem.Key + ":" + elem.Value +":"+elem.Value.IsDoneToString()+ Environment.NewLine);
+            }
             return sb.ToString();
         }
     }
     public class CalendTask: IComparable<CalendTask>
     {
         public string text;
-        public bool isDone;
+        public bool isDone = false;
 
         public CalendTask(string text)
         {
@@ -39,6 +45,14 @@ namespace GalimskyDayPlanner
         {
             this.text = text;
             this.isDone = isDone;
+        }
+
+        public string IsDoneToString()
+        {
+            if (isDone)
+                return "1";
+            else
+                return "0";
         }
 
         public int CompareTo(CalendTask other)

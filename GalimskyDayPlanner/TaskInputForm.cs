@@ -19,6 +19,7 @@ namespace GalimskyDayPlanner
         public Form1 form1;
         public TextBox textBox;
 
+        public DateTime date;
         public string keyDate; //ключ для обращения к Dictionary
         public int keyTime; //ключ для обращения к задаче
 
