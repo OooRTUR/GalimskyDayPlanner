@@ -21,7 +21,7 @@ namespace GalimskyDayPlanner
                 inst = new DataWorker();
             return inst;
         }
-
+        //вызывается в Form1
         public void Run()
         {
             Console.WriteLine(Environment.CurrentDirectory);
@@ -33,7 +33,7 @@ namespace GalimskyDayPlanner
 
             //OverWriteAllFiles();
         }
-
+        //вызывается в Form1
         public void OverWriteAllFiles()
         {
             foreach (var item in Data.days)
@@ -51,6 +51,7 @@ namespace GalimskyDayPlanner
             }
         }
 
+        //вызывается в Form1
         public void ReadAllFiles()
         {
             string[] files = Directory.GetFiles(dataDir, "d*.txt");
@@ -58,78 +59,101 @@ namespace GalimskyDayPlanner
             foreach (var file in files) {
                 int counter = 0;
                 string line;
-                Console.WriteLine(Path.GetFileName(file));
-                Console.WriteLine(GetDate(file));
+                string tmpDate;
+                Console.WriteLine("file name: "+Path.GetFileName(file));
+                tmpDate = GetDate(Path.GetFileName(file));
+                Console.WriteLine("file date: "+tmpDate);
+
+                Day tmpDay = new Day();
+                tmpDay.tasks = new Dictionary<int, CalendTask>();
+                
+
+                //Data.days.Add
+                Console.WriteLine("date: "+Utils.GetDateFromCode(tmpDate));
+                tmpDay.dateTime = Utils.GetDateFromCode(tmpDate);
                 StreamReader reader = new StreamReader(file);
                 while((line = reader.ReadLine()) != null){
                     //Console.WriteLine(line);
                     TaskTmp task = new TaskTmp();
                     task = GetTask(line);
-                    //Console.WriteLine(task);
+                    //Console.WriteLine("lineStr "+line);
+                    Console.WriteLine(task);
+                    CalendTask calTskTmp = new CalendTask(task.task,task.isDone);
+                    tmpDay.tasks.Add(task.num, calTskTmp);
                     counter++;
                 }
+
+                Data.days.Add(tmpDate, tmpDay);
                 reader.Close();
                 Console.WriteLine();
-
-                
             }
         }
-        //ключ получили
+        //метод принимает название текстового файла. ИЗ его названия возвращает ключ
+        //для Dictionary<string,Day>
         private string GetDate(string str)
         {
-            int count=0;
+            int lBoard=-1;
+            int hBoard=1;
             int k=0;
-            string searchStr = "__.";
+            string searchStr = "___";
             StringBuilder sb = new StringBuilder();
-            for(int i=1;i < str.Length; i++)
+            for(int i=0;i < str.Length; i++)
             {
                 if (str[i] == searchStr[k])
                 {
-                    string tmp = str.Substring(i - (count-1), count-1);
+                    string tmp = str.Substring(lBoard+1,hBoard-1);
+                    Console.WriteLine("GetDate DEBUG: "+tmp);
                     sb.Append(tmp);
-                    count = 0;
+                    sb.Append("_");
+                    lBoard = i;
+                    hBoard = 0;
                     k++;
                     if (k >= searchStr.Length)
                         break;
                 }
-                count++;
+                hBoard++;
             }
             return sb.ToString();
         }
         private TaskTmp GetTask(string str)
         {
-            string searchStr = "::";
-            int count = 0;
-            int k = 0;
+            //Console.WriteLine("initStr: "+str);
+            string searchStr = ":::";
+            int lBoard=-1;
+            int hBoard=1;
+            int k = 0;  //порядковый номер текщуего символа-разграничителя
             TaskTmp task = new TaskTmp();
             for(int i=0; i<str.Length; i++)
             {
                 if (str[i] == searchStr[k])
                 {
-                    string tmp = str.Substring(i - count, count);
-                    count = 0;
-                    Console.WriteLine(tmp);
-                    /*
+                    string tmp = str.Substring(lBoard+1, hBoard-1);
+                    
+                    lBoard = i;
+                    hBoard = 0;
+                    //Console.WriteLine(k);
                     switch (k)
                     {
                         case 0:
-                            task.SetTask(tmp);
-                            break;
-                        case 1:
+                            //Console.WriteLine("tmpTaskNum: " + tmp);
                             task.SetNum(tmp);
                             break;
+                        case 1:
+                            //Console.WriteLine("tmpTaskTASK: " + tmp);
+                            task.SetTask(tmp);
+                            break;
                         case 2:
+                            //Console.WriteLine("tmpTaskISDONE: " + tmp);
                             task.SetDone(tmp);
                             break;
                         default:
                             break;
                     }
-                    */
                     k++;
                     if (k >= searchStr.Length)
                         break;
                 }
-                count++;
+                hBoard++;
             }
             return task;
         }

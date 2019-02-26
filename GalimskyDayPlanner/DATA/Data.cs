@@ -25,7 +25,7 @@ namespace GalimskyDayPlanner
             StringBuilder sb = new StringBuilder();
             foreach (var elem in tasks)
             {
-                sb.Append(elem.Key + ":" + elem.Value +":"+elem.Value.IsDoneToString()+ Environment.NewLine);
+                sb.Append(elem.Key + ":" + elem.Value +":"+elem.Value.IsDoneToString()+":"+ Environment.NewLine);
             }
             return sb.ToString();
         }
