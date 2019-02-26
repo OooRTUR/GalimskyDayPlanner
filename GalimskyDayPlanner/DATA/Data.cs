@@ -9,6 +9,8 @@ namespace GalimskyDayPlanner
 {
     public static class Data
     {
+        public static string dataDir;
+
         public static string date;
         public static DateTime dateTime;
         public static List<PhoneNumber> numbers = new List<PhoneNumber>();

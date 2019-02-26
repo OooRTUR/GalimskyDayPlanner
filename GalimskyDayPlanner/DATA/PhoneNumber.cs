@@ -18,7 +18,7 @@ namespace GalimskyDayPlanner
 
         public override string ToString()
         {
-            return name + " | " + number;
+            return name + ":" + number+":"+Environment.NewLine;
         }
 
         public int CompareTo(PhoneNumber other)

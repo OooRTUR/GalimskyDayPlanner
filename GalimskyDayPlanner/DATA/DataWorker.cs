@@ -10,7 +10,8 @@ namespace GalimskyDayPlanner
     public class DataWorker
     {
         private static DataWorker inst;
-        private string dataDir;
+        private DataWorkerPhone dwp;
+        public string dataDir;
 
         private DataWorker()
         { }
@@ -25,12 +26,17 @@ namespace GalimskyDayPlanner
         public void Run()
         {
             Console.WriteLine(Environment.CurrentDirectory);
-            dataDir = Path.Combine(Environment.CurrentDirectory, "DATA");
-            if (Directory.Exists(dataDir))
+            Data.dataDir = Path.Combine(Environment.CurrentDirectory, "DATA");
+            if (Directory.Exists(Data.dataDir))
+            {
                 Console.WriteLine("Директория существует");
+                dataDir = Data.dataDir;
+                Console.WriteLine(Data.dataDir);
+            }
             else
-                Directory.CreateDirectory(dataDir);
-
+                Directory.CreateDirectory(Data.dataDir);
+            dwp = new DataWorkerPhone();
+            dwp.OverWriteAllFiles();
             //OverWriteAllFiles();
         }
         //вызывается в Form1

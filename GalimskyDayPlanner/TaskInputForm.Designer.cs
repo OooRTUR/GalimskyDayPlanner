@@ -38,15 +38,14 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 12);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(509, 149);
+            this.textBox1.Size = new System.Drawing.Size(509, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // applyTaskButton
             // 
-            this.applyTaskButton.Location = new System.Drawing.Point(397, 199);
+            this.applyTaskButton.Location = new System.Drawing.Point(397, 70);
             this.applyTaskButton.Name = "applyTaskButton";
             this.applyTaskButton.Size = new System.Drawing.Size(125, 23);
             this.applyTaskButton.TabIndex = 1;
@@ -56,7 +55,7 @@
             // 
             // cancelEditButton
             // 
-            this.cancelEditButton.Location = new System.Drawing.Point(211, 199);
+            this.cancelEditButton.Location = new System.Drawing.Point(211, 70);
             this.cancelEditButton.Name = "cancelEditButton";
             this.cancelEditButton.Size = new System.Drawing.Size(150, 23);
             this.cancelEditButton.TabIndex = 2;
@@ -66,7 +65,7 @@
             // 
             // deleteTaskButton
             // 
-            this.deleteTaskButton.Location = new System.Drawing.Point(13, 199);
+            this.deleteTaskButton.Location = new System.Drawing.Point(13, 70);
             this.deleteTaskButton.Name = "deleteTaskButton";
             this.deleteTaskButton.Size = new System.Drawing.Size(163, 23);
             this.deleteTaskButton.TabIndex = 3;
@@ -77,7 +76,7 @@
             // checkBoxDone
             // 
             this.checkBoxDone.AutoSize = true;
-            this.checkBoxDone.Location = new System.Drawing.Point(13, 167);
+            this.checkBoxDone.Location = new System.Drawing.Point(13, 38);
             this.checkBoxDone.Name = "checkBoxDone";
             this.checkBoxDone.Size = new System.Drawing.Size(86, 17);
             this.checkBoxDone.TabIndex = 4;
@@ -88,12 +87,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 234);
+            this.ClientSize = new System.Drawing.Size(534, 106);
             this.Controls.Add(this.checkBoxDone);
             this.Controls.Add(this.deleteTaskButton);
             this.Controls.Add(this.cancelEditButton);
             this.Controls.Add(this.applyTaskButton);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TaskInputForm";
             this.Text = "TaskInputForm";
             this.ResumeLayout(false);

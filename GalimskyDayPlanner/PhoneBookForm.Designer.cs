@@ -81,6 +81,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CrtNumberButton);
             this.Controls.Add(this.numbersPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PhoneBookForm";
             this.Text = "PhoneBookForm";
             this.ResumeLayout(false);

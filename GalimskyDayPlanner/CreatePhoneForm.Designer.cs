@@ -123,6 +123,9 @@
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.textBoxName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreatePhoneForm";
             this.Text = "CreatePhoneForm";
             this.ResumeLayout(false);

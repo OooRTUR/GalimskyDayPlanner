@@ -75,6 +75,7 @@
     </Compile>
     <Compile Include="DATA\Data.cs" />
     <Compile Include="DATA\DataWorker.cs" />
+    <Compile Include="DATA\DataWorkerPhone.cs" />
     <Compile Include="DATA\Utils.cs" />
     <Compile Include="UserControls\LabelDayTime.cs">
       <SubType>Component</SubType>
