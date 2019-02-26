@@ -62,14 +62,16 @@ namespace GalimskyDayPlanner
                 string tmpDate;
                 Console.WriteLine("file name: "+Path.GetFileName(file));
                 tmpDate = GetDate(Path.GetFileName(file));
+                tmpDate = tmpDate.Substring(1, tmpDate.Length-1);
                 Console.WriteLine("file date: "+tmpDate);
 
                 Day tmpDay = new Day();
                 tmpDay.tasks = new Dictionary<int, CalendTask>();
-                
+
 
                 //Data.days.Add
-                Console.WriteLine("date: "+Utils.GetDateFromCode(tmpDate));
+                //Console.WriteLine("date: "+Utils.GetDateFromCode(tmpDate));
+                Console.WriteLine("tmpDate: "+tmpDate);
                 tmpDay.dateTime = Utils.GetDateFromCode(tmpDate);
                 StreamReader reader = new StreamReader(file);
                 while((line = reader.ReadLine()) != null){

@@ -38,7 +38,7 @@ namespace GalimskyDayPlanner
                 if (date[i] == searchStr[k])
                 {
                     string tmpStr = date.Substring(lBoard + 1, hBoard - 1);
-                    //Console.WriteLine(tmpStr);
+                    Console.WriteLine(tmpStr);
                     switch (k)
                     {
                         case 0:
